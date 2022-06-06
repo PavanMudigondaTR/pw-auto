@@ -1,0 +1,17 @@
+{
+  "name": "actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.23.0-alpha-jun-5-2022"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "jsonpath-plus": "^6.0.1"
+  }
+}
