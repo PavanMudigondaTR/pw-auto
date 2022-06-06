@@ -11,8 +11,8 @@ test.describe('Grouping tests with test describe', ()=> {
             console.log('Loading test page...');
             const context = await browser.newContext({
                 httpCredentials: {
-                  username: 'ams_dev',
-                  password: 'AMS_65dev',
+                  username: 'sssss',
+                  password: 'dddd',
                 },
               });
               const page = await context.newPage();
