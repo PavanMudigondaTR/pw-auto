@@ -34,6 +34,7 @@ jobs:
         uses: PavanMudigonda/playwright-html-reporter-github-pages@v0.1
         id: test-report
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           playwright_results: test-results
           gh_pages: gh-pages
           playwright_history: playwright-history
