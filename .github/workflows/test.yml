@@ -34,7 +34,6 @@ jobs:
         uses: PavanMudigonda/playwright-html-reporter-github-pages@v0.1
         id: test-report
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
           playwright_results: test-results
           gh_pages: gh-pages
           playwright_history: playwright-history
@@ -44,9 +43,9 @@ jobs:
         if: always()
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: playwright-history
-          keep_files: true
 
       - name: Post the link to the report
         if: always()
